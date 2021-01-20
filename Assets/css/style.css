@@ -1,0 +1,684 @@
+/*------------ Fonts --------------*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Light.woff2') format('woff2'), url('../fonts/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,
+* {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+
+
+/*--------------- Top Info ------------------*/
+
+.top ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.top li {
+    float: left;
+}
+
+.top ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.header .btn {
+    background-color: rgb(246, 176, 36);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: 90px;
+}
+
+
+/*--------------- End Top Info ------------------*/
+
+
+/*---------------- Banner -----------------------*/
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.header::before {
+    content: "";
+    background-color: rgb(5, 52, 90);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+}
+
+
+/*----------------End Banner -----------------------*/
+
+
+/* ------------------Header----------------------- */
+
+
+/* #header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
+.header_text {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+.header_navigation {
+    background-color: rgba(11, 96, 164, 0.5);
+}
+
+.header_slider {
+    margin-top: 95px;
+}
+
+.menu_line {
+    position: relative;
+}
+
+.menu_line::after {
+    content: "";
+    position: absolute;
+    bottom: 12%;
+    left: 13%;
+    width: 3.5vw;
+    border-bottom: 2px solid rgb(246, 176, 36);
+}
+
+.header h1 {
+    margin: 60px auto;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.header h4 {
+    width: 90%;
+    text-align: center;
+    padding-left: 90px;
+    color: rgb(123, 175, 216);
+}
+
+
+/* .header {
+    background-color: rgb(13, 108, 184);
+} */
+
+
+/*--------------- End Header --------------*/
+
+
+/* ---------------Works -----------------*/
+
+
+/* .works .card {
+    box-shadow: 2px 2px 2px 2px rgb(247, 243, 243);
+} */
+
+.works .card_no {
+    color: rgb(40, 87, 158);
+    font-weight: 900;
+}
+
+.works .card {
+    border-radius: 10px;
+}
+
+.col-lg-3 {
+    margin-top: -90px;
+}
+
+
+/*--------------- End Works --------------*/
+
+
+/* ---------------AboutUs --------------*/
+
+.aboutus {
+    background: url(../images/about-bg.png);
+    height: 80vh;
+    position: relative;
+}
+
+.aboutus::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    background-color: rgb(255, 255, 255);
+}
+
+.head_decoration {
+    color: rgb(5, 74, 133);
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 50px;
+    position: relative;
+}
+
+.para_decoration {
+    text-align: center;
+    position: relative;
+}
+
+
+/* --------------End AboutUs---------------- */
+
+
+/*-------------- Header Slider --------------*/
+
+.headslider {
+    margin-top: 50px;
+}
+
+
+/*-------------- End Header Slider ----------*/
+
+
+/*-------------- Whyus -------------------*/
+
+.whyus {
+    background-color: rgb(241, 248, 255);
+}
+
+.why_video {
+    margin-left: -11%;
+}
+
+.whyus h2 {
+    margin-top: 40px;
+}
+
+.whyus p {
+    color: rgb(152, 142, 147);
+}
+
+.whyus .card-header {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*-------------- end Whyus --------------*/
+
+
+/*-------------- Services ---------------*/
+
+.service .fa {
+    color: rgb(246, 177, 39);
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.service .card-text {
+    margin-bottom: 50px;
+}
+
+.service .card {
+    box-shadow: 5px 5px 5px 5px rgb(247, 243, 243);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.service .card:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.service .card_no {
+    margin-top: 29px;
+    color: rgb(5, 87, 158);
+    font-weight: 900;
+}
+
+
+/*-------------- End Services -------------*/
+
+
+/*-------------- Action --------------------*/
+
+.action {
+    background-color: rgb(45, 103, 152);
+    margin-top: 50px;
+}
+
+.about_action {
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-weight: 900;
+}
+
+.action_para {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+.action .btn {
+    color: rgb(247, 247, 247);
+    border-radius: 25px;
+}
+
+.action_btn {
+    margin-top: 95px;
+}
+
+
+/*---------------- End Action------------- */
+
+
+/*--------------- Portfolio ---------------*/
+
+.portfolio ul {
+    text-align: center;
+}
+
+.portfolio ul li {
+    display: inline-block;
+    padding-left: 15px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+.portfolio a.active {
+    background: rgb(8, 128, 232);
+    padding: 10px;
+    border-radius: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    padding-bottom: 99px;
+}
+
+.flip-inner {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+
+/*-------------- End Portfolio ------------------*/
+
+
+/*--------------- TEAM -------------------------*/
+
+.team {
+    background-color: rgb(241, 248, 255);
+}
+
+.team .card {
+    box-shadow: 5px 5px 5px 5px rgb(247, 243, 243);
+    border-radius: 10px;
+}
+
+.team img {
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.team .card_no {
+    font-weight: 900;
+    color: rgb(5, 87, 158);
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.team .card_role {
+    margin-left: 20px;
+    position: relative;
+}
+
+.card_role::after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 0%;
+    width: 4vw;
+    border-bottom: 2px solid rgb(182, 220, 255);
+}
+
+.team .card-text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.team .fab {
+    margin-left: 15px;
+    color: rgb(6, 101, 183);
+    background-color: rgb(236, 246, 254);
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.team .fab:hover {
+    border: 1px solid;
+    box-shadow: 0 0 15px rgb(6, 101, 183);
+    transition: all 0.5s ease;
+}
+
+.team .fab:hover {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+
+/*-------------- End Team --------------------*/
+
+
+/*-------------- Pricing --------------------*/
+
+
+/* .pricing {
+    position: relative;
+    overflow: hidden;
+} */
+
+.pricing .card {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing .card-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing .blue {
+    border-radius: 10px;
+}
+
+.pricing .card-header {
+    color: rgb(5, 87, 158);
+    text-align: center;
+    font-weight: 900;
+}
+
+.pricing .card-headerblue {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 900;
+    height: 50px;
+    padding-top: 15px;
+    background-color: rgb(8, 128, 232);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pricing-tenure {
+    font-size: 15px;
+    color: rgb(177, 163, 162);
+}
+
+.pricing .card-text {
+    text-align: center;
+}
+
+.pricing .card-content {
+    text-align: center;
+}
+
+.pricing .card-content2 {
+    text-align: center;
+    color: rgb(183, 183, 190);
+}
+
+.pricing .btn {
+    background-color: rgb(8, 128, 232);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 45px;
+    border-radius: 25px;
+}
+
+.pricing .card:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.pricing .advanced {
+    width: 150px;
+    position: absolute;
+    top: 18px;
+    right: -40px;
+    transform: rotate(45deg);
+    /* z-index: 1; */
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: rgb(8, 128, 232);
+    color: rgb(255, 255, 255);
+}
+
+
+/*----------------- End Pricing ----------------*/
+
+
+/*----------------- Frequently Asked -------------*/
+
+.frequent {
+    background-color: rgb(241, 248, 255);
+}
+
+.frequent .card-header {
+    background-color: rgb(255, 255, 255);
+}
+
+.frequent .card_bottom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/*----------------- End Frequently Askes -----------*/
+
+
+/*----------------- Contact US------------------- */
+
+.contact {
+    background: url(../images/about-bg.png);
+    height: 90vh;
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact_header {
+    color: rgb(4, 60, 109);
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.contact_para {
+    margin-left: 50px;
+}
+
+.contact .btn {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(23, 135, 233);
+    color: rgb(23, 135, 233);
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 12px;
+}
+
+.contact .fa {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 128, 232);
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.needs-validation {
+    position: relative;
+}
+
+
+/*---------------- End Contact us -------------*/
+
+
+/*---------------- Newsletter ----------------*/
+
+.news {
+    background-color: rgb(5, 87, 158);
+}
+
+.news_head {
+    color: rgb(255, 255, 255);
+    margin-top: 70px;
+    /* margin-left: 30px; */
+}
+
+.news_para {
+    color: rgb(255, 255, 255);
+    /* margin-left: 30px; */
+    margin-bottom: 70px;
+}
+
+.news form {
+    margin-top: 90px;
+    background: rgb(255, 255, 255);
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.news form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 100px);
+}
+
+.news form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 3px;
+    background: rgb(246, 176, 36);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+
+/*-------------- End Newsletter ----------------*/
+
+
+/*-------------- Useful links ----------------*/
+
+.links {
+    background-color: rgb(6, 95, 173);
+}
+
+.links .text_line {
+    color: rgb(255, 255, 255);
+}
+
+.links .text-list a {
+    color: rgb(165, 201, 222);
+}
+
+.links .fa {
+    color: rgb(86, 167, 233);
+}
+
+.links .fab {
+    background-color: rgb(31, 111, 181);
+    color: rgb(250, 243, 243);
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+
+/*-------------- End useful links ------------------*/
+
+
+/*--------------- Footer -------------------*/
+
+.foot {
+    background-color: rgb(5, 87, 158);
+}
+
+
+/*--------------End Footer ---------------*/
